@@ -15,12 +15,13 @@ class kingdom(domain):
     
     def __init__(self, domainName, kingdomName):
         
+        super().__init__(domainName)
         self.kingdomName = kingdomName
     
 
         
 
-colossalSquid = domain("Eukarya")
+colossalSquid = kingdom("Eukarya", "Animalia")
 
 colossalSquid.domainInfo()
         
@@ -29,7 +30,3 @@ colossalSquid.domainInfo()
 
 
     
-
-
-
-
