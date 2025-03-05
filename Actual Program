@@ -1,1 +1,35 @@
 
+class domain:
+    
+    def __init__(self, domainName):
+        
+        self.domainName = "Eukarya"
+        
+    def domainInfo(self):
+        
+        print("Domain Information:")
+        print("Name:", self.domainName)
+
+
+class kingdom(domain):
+    
+    def __init__(self, domainName, kingdomName):
+        
+        self.kingdomName = "Animalia"
+    
+
+        
+
+colossalSquid = domain("Eukarya")
+
+colossalSquid.domainInfo()
+        
+
+
+
+
+    
+
+
+
+
