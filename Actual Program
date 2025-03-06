@@ -19,12 +19,73 @@ class kingdom(domain):
     
     def kingdomInfo(self):
         
-        print("\nThey belong to the 'Animalia' Kingdom, ")
+        self.domainInfo()
         
+        print("\nThey belong to the 'Animalia' Kingdom, which means they are multicellular, consume other organisms for food, and they can move around.")
 
-blueWhale = kingdom("Eukarya", "Animalia")
+class phylum(kingdom):
+    
+    def __init__(self, domainName, kingdomName, phylumName):
+        
+        super().__init__(domainName, kingdomName)
+        self.phylumName = phylumName
+    
+    def phylumInfo(self):
+        
+        self.kingdomInfo()
+        
+        print("\nThey belong to the 'Chordata' Phylum, which means that at some stage during their development they have a notochord, a dorsal hollow nerve cord, pharyngeal slits, and a post-anal tail.")
+    
+class class1(phylum):
+    
+    def __init__(self, domainName, kingdomName, phylumName, class1Name):
+        
+        super().__init__(domainName, kingdomName, phylumName)
+        self.class1Name = class1Name
+        
+    def class1Info(self):
+        
+        self.phylumInfo()
+        
+        print("\nThey belong to the 'Mammalia' Class, which means they have hair or fur, are warm-blooded, and the mothers feed milk to their young.")
 
-blueWhale.kingdomInfo()
+class order(class1):
+    
+    def __init__(self, domainName, kingdomName, phylumName, class1Name, orderName):
+        
+        super().__init__(domainName, kingdomName, phylumName, class1Name)
+        self.orderName = orderName
+        
+    def orderInfo(self):
+        
+        self.class1Info()
+        
+        print("\nThey actually belong to the 'Artiodactyla' Order, which interestingly is the order in which deer, sheep, and camels also belong to. For this reason, whales belong in an 'infraorder' called Cetacea, which means that they are mammals that never leave the water.")
+
+class family(order):
+    
+    def __init__(self, domainName, kingdomName, phylumName, class1Name, orderName, familyName):
+        
+        super().__init__(domainName, kingdomName, phylumName, class1Name, orderName)
+        self.familyName = familyName
+        
+    def familyInfo(self):
+        
+        self.orderInfo()
+        
+        if (self.familyName == "Balaenopteridae"):
+            
+            print("\nThey belong to the 'Balaenopteridae' Family, which means that they have throat grooves, a long, slender, body, and baleen plates instead of teeth.")
+            
+            
+        
+        
+        
+blueWhale = family("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae")
+
+#blueWhale = family("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae", "Balaenoptera", "Balaenoptera musculus")
+
+blueWhale.familyInfo()
         
 
 
