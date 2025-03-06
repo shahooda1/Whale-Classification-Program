@@ -7,8 +7,7 @@ class domain:
         
     def domainInfo(self):
         
-        print("Domain Information:")
-        print("Name:", self.domainName)
+        print("\nThey belong to the 'Eukarya' Domain, which means they are composed of cells that contain nuclei.")
 
 
 class kingdom(domain):
@@ -18,12 +17,14 @@ class kingdom(domain):
         super().__init__(domainName)
         self.kingdomName = kingdomName
     
-
+    def kingdomInfo(self):
+        
+        print("\nThey belong to the 'Animalia' Kingdom, ")
         
 
-colossalSquid = kingdom("Eukarya", "Animalia")
+blueWhale = kingdom("Eukarya", "Animalia")
 
-colossalSquid.domainInfo()
+blueWhale.kingdomInfo()
         
 
 
