@@ -130,7 +130,7 @@ spermWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "
 
 blueWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae", "Balaenoptera", "Balaenoptera musculus")
 
-bottlenoseDolphin = species("")
+bottlenoseDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea",)
 
 
 
