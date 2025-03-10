@@ -80,6 +80,10 @@ class family(order):
         elif (self.familyName == "Physeteridae"):
             
             print("\nThey belong to the 'Physeteridae' Family, which means that they have large heads, dive deep underwater, use advanced echolocation, and have teeth only in their lower jaw.")
+        
+        elif (self.familyName == "Delphinadae"):
+            
+            print("\nThey belong to the 'Delphinadae' Family, which is the family that contains moderate to small-sized toothed whales.")
             
 # Genus
 class genus(family):
@@ -99,8 +103,15 @@ class genus(family):
         
         elif (self.genusName == "Physeter"):
             
-            print("\nThey belong to the 'Physeter' Family, which only contains one living species, the sperm whale.")
+            print("\nThey belong to the 'Physeter' Genus, which only contains one living species, the sperm whale.")
 
+        elif (self.genusName == "Tursiops"):
+            
+            print("\nThey belong to the 'Tursiops' Genus, which means that they are smaller, lighter in color, and have large flippers in proportion to their bodies.")
+            
+        elif (self.genusName == "Delphinus"):
+            
+            print("\n")
 
        
 class species(genus):
@@ -120,9 +131,15 @@ class species(genus):
         
         elif (self.speciesName == "Physeter macrocephalus"):
             
-            print("\nThis species is the 'Physeter macrocephalus', or the 'sperm whale.' This is the largest toothed whale, and they like to dive deep underwater to hunt squid. They also are unique in that they have an asymmetrical blowhole that is located on the left side of their head.")
+            print("\nThis species is the 'Physeter macrocephalus,' or the 'sperm whale.' This is the largest toothed whale, and they like to dive deep underwater to hunt squid. They also are unique in that they have an asymmetrical blowhole that is located on the left side of their head.")
+        
+        elif (self.speciesName == "Tursiops truncatus"):
+            
+            print("\nThis species is the 'Tursiops truncatus,' which is known for its curved dorsal fin, long beak, high intelligence, and social behavior.")
         
            
+
+# Domain, kingdom, phylum, class, order, family, genus, species
 
 # Blue whale, sperm whale, bottlenose dolphin, common dolphin, orca, narwhal, pilot whale, fin whale, humpback whale, beluga whale, harbor porpoise, amazon river dolphin
 
@@ -130,13 +147,13 @@ spermWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "
 
 blueWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae", "Balaenoptera", "Balaenoptera musculus")
 
-bottlenoseDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea",)
+bottlenoseDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinadae", "Tursiops", "Tursiops truncatus")
+
+commonDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinadae", "Delphinus", "Delphinus delphis")
 
 
+#bottlenoseDolphin.speciesInfo()
 
-
-spermWhale.speciesInfo()
-        
 
 
 
