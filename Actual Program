@@ -83,7 +83,7 @@ class family(order):
         
         elif (self.familyName == "Delphinadae"):
             
-            print("\nThey belong to the 'Delphinadae' Family, which is the family that contains moderate to small-sized toothed whales.")
+            print("\nThey belong to the 'Delphinadae' Family, which is the family that contains moderate to small-sized toothed whales. These are carnivorous marine mammals, also known as dolphins.")
             
 # Genus
 class genus(family):
@@ -111,7 +111,11 @@ class genus(family):
             
         elif (self.genusName == "Delphinus"):
             
-            print("\n")
+            print("\nThey belong to the 'Delphinus' Genus, which means that they have slender bodies with a relatively long beak. Their beaks are also separated from their forehead. This genus currently only contains 1 species.")
+
+        elif (self.genusName == "Orcinus"):
+
+            print("\nThey belong to the 'Orcinus' Genus, which only contains one species, the killer whale / orca.")
 
        
 class species(genus):
@@ -136,10 +140,19 @@ class species(genus):
         elif (self.speciesName == "Tursiops truncatus"):
             
             print("\nThis species is the 'Tursiops truncatus,' which is known for its curved dorsal fin, long beak, high intelligence, and social behavior.")
+
+        elif (self.speciesName == "Delphinus Delphis"):
+
+            print("\nThis species is the 'Delphinus delphis.' This is the most abundant cetacean in the world, with a global population of about 6 million dolphins. This species contains two 'ecotypes,' which are members of the same species with certain different features based on their environments.") 
+
+        elif (self.speciesName == "Orcinus orca"):
+
+            print("\nThis species is the 'Orcinus orca,' aka the killer whale / orca. This is the largest species in the family of oceanic dolphins. The orca is an apex predator, and they are highly social animals that hunt in groups called 'pods.'")
         
            
 
 # Domain, kingdom, phylum, class, order, family, genus, species
+
 
 # Blue whale, sperm whale, bottlenose dolphin, common dolphin, orca, narwhal, pilot whale, fin whale, humpback whale, beluga whale, harbor porpoise, amazon river dolphin
 
@@ -150,6 +163,30 @@ blueWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "B
 bottlenoseDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinadae", "Tursiops", "Tursiops truncatus")
 
 commonDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinadae", "Delphinus", "Delphinus delphis")
+
+# Orca
+#orca = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinidae", "Orcinus", "Orcinus orca")
+
+# Narwhal
+#narwhal = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Monodontidae", "Monodon", "Monodon monoceros")
+
+# Pilot Whale
+#pilotWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinidae", "Globicephala", "Globicephala melas")
+
+# Fin Whale
+#finWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae", "Balaenoptera", "Balaenoptera physalus")
+
+# Humpback Whale
+#humpbackWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae", "Megaptera", "Megaptera novaeangliae")
+
+# Beluga Whale
+#belugaWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Monodontidae", "Delphinapterus", "Delphinapterus leucas")
+
+# Harbor Porpoise
+#harborPorpoise = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Phocoenidae", "Phocoena", "Phocoena phocoena")
+
+# Amazon River Dolphin
+#amazonRiverDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Iniidae", "Inia", "Inia geoffrensis")
 
 
 #bottlenoseDolphin.speciesInfo()
