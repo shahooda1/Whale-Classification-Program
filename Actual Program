@@ -81,9 +81,13 @@ class family(order):
             
             print("\nThey belong to the 'Physeteridae' Family, which means that they have large heads, dive deep underwater, use advanced echolocation, and have teeth only in their lower jaw.")
         
-        elif (self.familyName == "Delphinadae"):
+        elif (self.familyName == "Delphinidae"):
             
             print("\nThey belong to the 'Delphinadae' Family, which is the family that contains moderate to small-sized toothed whales. These are carnivorous marine mammals, also known as dolphins.")
+            
+        elif (self.familyName == "Monodontidae"):
+            
+            print("\nThey belong to the 'Monodontidae' Family, which comprises of only two living whale species. They are characterized by having forehead melons and having a short or no snout.")
             
 # Genus
 class genus(family):
@@ -116,6 +120,10 @@ class genus(family):
         elif (self.genusName == "Orcinus"):
 
             print("\nThey belong to the 'Orcinus' Genus, which only contains one species, the killer whale / orca.")
+        
+        elif (self.genusName == "Monodon"):
+            
+            print("\nThey belong to the 'Monodon' Genus, which only contains one living species, the narwhal. They are characterized by their long spiral shaped tusk.")
 
        
 class species(genus):
@@ -147,7 +155,11 @@ class species(genus):
 
         elif (self.speciesName == "Orcinus orca"):
 
-            print("\nThis species is the 'Orcinus orca,' aka the killer whale / orca. This is the largest species in the family of oceanic dolphins. The orca is an apex predator, and they are highly social animals that hunt in groups called 'pods.'")
+            print("\nThis species is the 'Orcinus orca,' aka the killer whale. This is the largest species in the family of oceanic dolphins. The orca is an apex predator, and they are highly social animals that hunt in groups called 'pods.'")
+        
+        elif (self.speciesName == "Monodon monoceros"):
+            
+            print("\nThis species is the 'Monodon monoceros,' aka the narwhal. These creatures live in the arctic, males have a trademark long spiral tusk, and they feed on fish. Contrary to popular belief, males most likely use their tusks to compete for females.)
         
            
 
@@ -160,15 +172,15 @@ spermWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "
 
 blueWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae", "Balaenoptera", "Balaenoptera musculus")
 
-bottlenoseDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinadae", "Tursiops", "Tursiops truncatus")
+bottlenoseDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinidae", "Tursiops", "Tursiops truncatus")
 
-commonDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinadae", "Delphinus", "Delphinus delphis")
+commonDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinidae", "Delphinus", "Delphinus delphis")
 
 # Orca
-#orca = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinidae", "Orcinus", "Orcinus orca")
+orca = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinidae", "Orcinus", "Orcinus orca")
 
 # Narwhal
-#narwhal = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Monodontidae", "Monodon", "Monodon monoceros")
+narwhal = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Monodontidae", "Monodon", "Monodon monoceros")
 
 # Pilot Whale
 #pilotWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinidae", "Globicephala", "Globicephala melas")
@@ -189,7 +201,7 @@ commonDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea"
 #amazonRiverDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Iniidae", "Inia", "Inia geoffrensis")
 
 
-#bottlenoseDolphin.speciesInfo()
+orca.speciesInfo()
 
 
 
