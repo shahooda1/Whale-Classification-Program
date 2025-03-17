@@ -124,6 +124,14 @@ class genus(family):
         elif (self.genusName == "Monodon"):
             
             print("\nThey belong to the 'Monodon' Genus, which only contains one living species, the narwhal. They are characterized by their long spiral shaped tusk.")
+            
+        elif (self.genusName == "Globicephala"):
+            
+            print("\nThey belong to the 'Globicephala' Genus, which means they have stocky bodies, round dorsal fins, and large, bulbous heads.")
+            
+        elif (self.genusName == "Megaptera"):
+            
+            print("\nThey belong to the 'Megaptera,' Genus, which only contains one species, the humpback whale.")
 
        
 class species(genus):
@@ -147,11 +155,11 @@ class species(genus):
         
         elif (self.speciesName == "Tursiops truncatus"):
             
-            print("\nThis species is the 'Tursiops truncatus,' which is known for its curved dorsal fin, long beak, high intelligence, and social behavior.")
+            print("\nThis species is the 'Tursiops truncatus,' or the bottlenose dolphin. It is known for its curved dorsal fin, long beak, high intelligence, and social behavior.")
 
         elif (self.speciesName == "Delphinus Delphis"):
 
-            print("\nThis species is the 'Delphinus delphis.' This is the most abundant cetacean in the world, with a global population of about 6 million dolphins. This species contains two 'ecotypes,' which are members of the same species with certain different features based on their environments.") 
+            print("\nThis species is the 'Delphinus delphis,' or the common dolphin. This is the most abundant cetacean in the world, with a global population of about 6 million dolphins. This species contains two 'ecotypes,' which are members of the same species with certain different features based on their environments.") 
 
         elif (self.speciesName == "Orcinus orca"):
 
@@ -159,8 +167,19 @@ class species(genus):
         
         elif (self.speciesName == "Monodon monoceros"):
             
-            print("\nThis species is the 'Monodon monoceros,' aka the narwhal. These creatures live in the arctic, males have a trademark long spiral tusk, and they feed on fish. Contrary to popular belief, males most likely use their tusks to compete for females.)
+            print("\nThis species is the 'Monodon monoceros,' aka the narwhal. These creatures live in the arctic, males have a trademark long spiral tusk, and they feed on fish. Contrary to popular belief, males most likely use their tusks to compete for females.")
         
+        elif (self.speciesName == "Globicephala melas"):
+            
+            print("\nThis species is the 'Globicephala melas,' or the long-finned pilot whale. It is characterized by its dark-colored body, and long pectoral fins.")
+        
+        elif (self.speciesName == "Balaenoptera physalus"):
+            
+            print("\nThis species is the 'Balaenoptera physalus,' or the fin whale. This is the second largest animal on the planet, and it is characterized by its long, streamlined body and asymmetrical coloring on its lower jaw.")
+            
+        elif (self.speciesName == "Megaptera novaeangliae"):
+            
+            print("\nThis species is the 'Megaptera novaeangliae,' or the humpack whale. They are known for their long pectoral fins, distinctive hump on their backs, and their complex songs used for mating. They also migrate seasonally to tropical waters to breed.")
            
 
 # Domain, kingdom, phylum, class, order, family, genus, species
@@ -183,10 +202,10 @@ orca = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphi
 narwhal = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Monodontidae", "Monodon", "Monodon monoceros")
 
 # Pilot Whale
-#pilotWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinidae", "Globicephala", "Globicephala melas")
+pilotWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinidae", "Globicephala", "Globicephala melas")
 
 # Fin Whale
-#finWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae", "Balaenoptera", "Balaenoptera physalus")
+finWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae", "Balaenoptera", "Balaenoptera physalus")
 
 # Humpback Whale
 #humpbackWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae", "Megaptera", "Megaptera novaeangliae")
@@ -201,7 +220,7 @@ narwhal = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Mon
 #amazonRiverDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Iniidae", "Inia", "Inia geoffrensis")
 
 
-orca.speciesInfo()
+finWhale.speciesInfo()
 
 
 
