@@ -1,1 +1,1 @@
-# Squid-Classification-Program
+# Whale-Classification-Program
