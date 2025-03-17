@@ -1,4 +1,11 @@
 
+# For clearing the console
+import os
+
+def clearConsole():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+
 class domain:
     
     def __init__(self, domainName):
@@ -88,6 +95,14 @@ class family(order):
         elif (self.familyName == "Monodontidae"):
             
             print("\nThey belong to the 'Monodontidae' Family, which comprises of only two living whale species. They are characterized by having forehead melons and having a short or no snout.")
+        
+        elif (self.familyName == "Phocoenidae"):
+
+            print("\nThey belong to the 'Phocoenidae' Family, which consists of small, toothed marine mammals called porpoises. They have stout bodies, spade-shaped teeth, and short beaks.")
+
+        elif (self.familyName == "Iniidae"):
+
+            print("\nThey belong to the 'Iniidae' Family, which is the family that contains river dolphins.")
             
 # Genus
 class genus(family):
@@ -133,6 +148,17 @@ class genus(family):
             
             print("\nThey belong to the 'Megaptera,' Genus, which only contains one species, the humpback whale.")
 
+        elif (self.genusName == "Delphinapterus"):
+
+            print("\nThey belong to the 'Delphinapterus' Genus, which only contains one species, the beluga whale.")
+
+        elif (self.genusName == "Phocoena"):
+
+            print("\nThey belong to the 'Phocoena' Genus, which means they are small, robust porpoises that have blunt snouts and prefer coastal or riverline habitats.")
+
+        elif (self.genusName == "Inia"):
+
+            print("\nThey belong to the 'Inia' Genus, which means they have long, slender bodies, a pronounced beak, a very flexible neck, and advanced echolocation to navigate murky environments.")
        
 class species(genus):
     
@@ -180,11 +206,18 @@ class species(genus):
         elif (self.speciesName == "Megaptera novaeangliae"):
             
             print("\nThis species is the 'Megaptera novaeangliae,' or the humpack whale. They are known for their long pectoral fins, distinctive hump on their backs, and their complex songs used for mating. They also migrate seasonally to tropical waters to breed.")
-           
+        
+        elif (self.speciesName == "Delphinapterus leucas"):
 
-bluewhale
+            print("\nThis species is the 'Delphinapterus leucas,' known as the beluga whale. They are characterized by having a distinct white color, a lack of a dorsal fin, high vocalization abilities, and the ability to adapt to Arctic waters.")
 
+        elif (self.speciesName == "Phocoena phocoena"):
 
+            print("\nThis species is the 'Phocoena phocoena,' or the harbor porpoise. This species is smaller in size compared to the others in its genus, and it also has more solitary behavior.")
+
+        elif (self.speciesName == "Inia geoffrensis"):
+
+            print("\nThis species is the 'Inia geoffrensis.' known as the amazon river dolphin. This animal is a pink-gray color, and it does not have a dorsal fin. It lives exclusively in fresh water areas in South America.")
 
 
 
@@ -215,22 +248,104 @@ pilotWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "
 finWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae", "Balaenoptera", "Balaenoptera physalus")
 
 # Humpback Whale
-#humpbackWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae", "Megaptera", "Megaptera novaeangliae")
+humpbackWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae", "Megaptera", "Megaptera novaeangliae")
 
 # Beluga Whale
-#belugaWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Monodontidae", "Delphinapterus", "Delphinapterus leucas")
+belugaWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Monodontidae", "Delphinapterus", "Delphinapterus leucas")
 
 # Harbor Porpoise
-#harborPorpoise = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Phocoenidae", "Phocoena", "Phocoena phocoena")
+harborPorpoise = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Phocoenidae", "Phocoena", "Phocoena phocoena")
 
 # Amazon River Dolphin
-#amazonRiverDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Iniidae", "Inia", "Inia geoffrensis")
-
-
-finWhale.speciesInfo()
+amazonRiverDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Iniidae", "Inia", "Inia geoffrensis")
 
 
 
 
+def entry1():
 
+    print("ENTRY #1: BLUE WHALE\n")
+
+    blueWhale.speciesInfo()
+
+    print("""                                                                                                                              
+                                                                                               
+                                                                                                                              
+                                                                                                  ▒▒▒▒▒▒▓▓                    
+                                                                                         ▓▒▒▒▒▒░░░░░░░░░▒▒▒▒▓▓                
+                                                                        ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░▒▒▒▓▓▓▓▓██                
+                                                                    ▓▒▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓███▓▓▓▓▓▓█                
+                                                              ▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓█████▓▓▓▒▒▒▒▒▒▒▒▓▓▓▓█                
+                                                          ▒▒▒▒░░░░▒▒▒▓▓▓███████████▓▓▓▓▒▒▒▒░░░░░░░░░░▒▒▒▒▒▒▒▓▓▓█              
+                                                       ▓▒▒▒▒░▒▒▒▓▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒░░░░░▒░░░░▒▒▒▒▒▒▒▒▒▓▓████             
+                                                     ▒▒▒▒▒░▒▒▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░▒░▒▒▒░▒▒▒░▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓████              
+                                                   ▒▒▒▒▒▒▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒░▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓████              
+                                                  ▒▒▒▒▒▒▒▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████               
+                                                ▒▒▒▒▒▒▒▒▓▓▓▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███                
+                                               ▒▒▒▒▒▒▓▓▓▓▓▓▒▒▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓████                 
+                                              ▒▒▒▒▒▒▒▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▓▓▒▒▒▒▓▒▓▓▒▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███                   
+                                            ▓▒▒▒▒▒▒▒▒▒▒▒▒▓▒▒▒▒▓▒▓▒▒▒▒▓▒▒▒▒▒▒▒▒▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓███                    
+                                           ▓▒▒▒▒▒▒▒▒▒▒▒▒▓▒▓▒▒▓▒▓▒▒▒▒▓▒▒▒▒▒▒▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██                     
+                         ▒▒▒▒▒▒▒▒▒▒▓▓▓▓▓▓▓▓▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▓▒▓▒▓▒▒▓▒▒▓▓▒▓▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                       
+                        ▓▓▓██████████████████▓▓▒▒▒▒▒▒▓▓▒▓▓▒▓▓▒▓▒▒▓▓▒▒▓▓▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█                         
+                                       ▓▓▓▓▓▓▓▓▒▒▒▒▒▓▓▓▒▒▒▓▓▓▓▒▒▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                           
+                                      ▓▒▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▒▒▓▒▓▓▓▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██                             
+                                     ▓▒▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█                               
+                                    ▓▒▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                                   
+                                    ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓                                       
+                                   ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██▓█████▓▓▓▓▓▓▓▓█                                             
+                                   ▓▓▓▓▓▓█████████████████████████████▓▓▓▓▓▓█                                                 
+                                  ▓▓▓▓███████████████████████████                                                             
+                                  █▓▓███████                                                                                  
+               ██████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██████▓▓▓                                                                                 
+         ██▓▓▓▓▓▓▓▓▓▓██████████████▓████████████████                                                                          
+         ▓▓████████████████████████▓██████████████████                                                                        
+                       █████████████████████████████                                                                          
+                                                                                                                              
+
+                                                                                                                              """)
     
+
+def entry2():
+
+    print("ENTRY 2: SPERM WHALE\n")
+
+    spermWhale.speciesInfo()
+
+    print("""                                                                                                                              
+                █▓███                ████████▓█▓▓▓▓▓▓▓████▓███████▓▓██████▓▓▓▓▓▓██▓▓▓███  ███████                                         
+            █▓▓▓▓▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██                                      
+            ██▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█                                  
+            ▓▓▓▓▓▓▓▓▓████████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█                            
+            ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█                        
+            ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓███████████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓██████▓▓▓▓▓▓▓▓▓▓▓▓▓█                    
+            ▓▓▓▓▓▓▓▓▓▓▓▓████████████▓▓▓▓▓▓▓▓▓███▓▓▓▓████████████████████▓▓▓▓▓▓▓██▓██▓▓██████████▓▓▓▓▓▓█████▓▓▓▓▓▓▓▓▓▓▓▓▓▓█               
+            ▓▓▓▓▓▓▓▓████████████████████████████▓▓████▓▓██████████████████████████████████████████████▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓█▓▓██             
+            ▓▓▓▓▓▓▓████████████████████▓▓▓▓▓▓▓▓▓▓▓█████████████▓███████████████████████████████████████████▓▓▓▓▓▓▓▓▓▓███▓▓██   ███▓█   
+                ▓▓▓▓▓▓▓▓▓▓▓▓▓██████████████▓▓▓▓▓▓▓▓████████████████████████████████████████████████████████████▓▓▓███████▓████████████   
+                                ▓▓▓▓▓▓████████████████████████████████████████████████████████████████████████████████████████████████  
+                        ▓▓▓▓▓▓▓▓▓▓▓███████████████████████████████████████████████████████████████████    ███████████████    ██████████  
+                    ▓██████                                        ████████████         ██                                   █████████ 
+                                                                                                                                ███████ 
+                                                                                                                                    ████ 
+                                                                                                                                        
+                                                                                                                                        """)
+    
+
+def entry3():
+
+    print("ENTRY #3: BOTTLENOSE DOLPHIN\n")
+
+    bottlenoseDolphin.speciesInfo()
+
+#def entry4():
+#def entry5():
+#def entry6():
+#def entry7():
+#def entry8():
+#def entry9():
+#def entry10():
+#def entry11():
+#def entry12():
+
+
