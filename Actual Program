@@ -234,10 +234,9 @@ class species(genus):
 
 
 # Defining each species under the 'species' class
+blueWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae", "Balaenoptera", "Balaenoptera musculus")
 
 spermWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Physeteridae", "Physeter", "Physeter macrocephalus")
-
-blueWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae", "Balaenoptera", "Balaenoptera musculus")
 
 bottlenoseDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Delphinidae", "Tursiops", "Tursiops truncatus")
 
@@ -811,7 +810,22 @@ def actualThing():
         clearConsole()
 
         # Asking the user which entry they want to see
+
+        print("1. Blue Whale")
+        print("2. Sperm Whale")
+        print("3. Bottlenose Dolphin")
+        print("4. Common Dolphin")
+        print("5. Orca")
+        print("6. Narwhal")
+        print("7. Pilot Whale")
+        print("8. Fin Whale")
+        print("9. Humpback Whale")
+        print("10. Beluga Whale")
+        print("11. Harbor Porpoise")
+        print("12. Amazon River Dolphin")
+
         entryNum = input("Enter a number from 1-12 to view the corresponding entry:\n")
+
 
         while entryNum.strip().isdigit() == False or int(entryNum.strip()) < 1 or int(entryNum.strip()) > 12:
             entryNum = input("Please provide a number from 1-12:\n")
@@ -849,12 +863,14 @@ def actualThing():
         endProgram = input("Would you like to see another entry? (y/n):\n").strip().lower()
 
 
-        if endProgram != 'y':
+        if endProgram == 'y':
+
+            print("\nRunning the program again
+
+        elif endProgram == 'n'
 
             print("Exiting the program.")
             break
-
-
 
 
 
