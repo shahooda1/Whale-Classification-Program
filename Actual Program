@@ -1,12 +1,4 @@
 
-
-import os
-
-# For clearing the console
-def clearConsole():
-    os.system('cls' if os.name == 'nt' else 'clear')
-
-
 # Defining all of the classifications and what the characteristics of those classifications are
 class domain:
     
@@ -233,7 +225,8 @@ class species(genus):
 
 
 
-# Defining each species under the 'species' class
+# Defining each species under the 'species' class. It also defines what domain, kingdom, phylum, class, order, genus, and species the animals belong to
+
 blueWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Balaenopteridae", "Balaenoptera", "Balaenoptera musculus")
 
 spermWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Physeteridae", "Physeter", "Physeter macrocephalus")
@@ -257,6 +250,7 @@ belugaWhale = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", 
 harborPorpoise = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Phocoenidae", "Phocoena", "Phocoena phocoena")
 
 amazonRiverDolphin = species("Eukarya", "Animalia", "Chordata", "Mammalia", "Cetacea", "Iniidae", "Inia", "Inia geoffrensis")
+
 
 
 # Defining functions to print the information and the ascii art easily
@@ -740,7 +734,7 @@ def entry12():
                                                    ▓▓▒▒▒▒▒▒▒▒                                                                     """)
 
 
-def mainMenu():
+def title():
 
     print("""
 ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░
@@ -802,12 +796,10 @@ def mainMenu():
     go = input("Press enter to start the program.\n\n")
 
 
+
 def actualThing():
 
     while True:
-
-# Clearing the console so it doesn't get cluttered
-        clearConsole()
 
 # Asking the user which entry they want to see
 
@@ -888,6 +880,6 @@ def actualThing():
 
 
 
-mainMenu()
+title()
 
 actualThing()
