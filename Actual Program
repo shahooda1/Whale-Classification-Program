@@ -806,10 +806,10 @@ def actualThing():
 
     while True:
 
-        # Clearing the console so it doesn't get cluttered
+# Clearing the console so it doesn't get cluttered
         clearConsole()
 
-        # Asking the user which entry they want to see
+# Asking the user which entry they want to see
 
         print("1. Blue Whale")
         print("2. Sperm Whale")
@@ -824,16 +824,16 @@ def actualThing():
         print("11. Harbor Porpoise")
         print("12. Amazon River Dolphin")
 
-        entryNum = input("Enter a number from 1-12 to view the corresponding entry:\n")
+        entryNum = input("\nEnter a number from 1-12 to view the corresponding entry:\n")
 
 
         while entryNum.strip().isdigit() == False or int(entryNum.strip()) < 1 or int(entryNum.strip()) > 12:
             entryNum = input("Please provide a number from 1-12:\n")
 
-        # Converting entryNum to an integer
+# Converting entryNum to an integer
         entryNum = int(entryNum.strip())
 
-        # Entry options
+# Entry options
         if entryNum == 1:
             entry1()
         elif entryNum == 2:
@@ -859,23 +859,35 @@ def actualThing():
         elif entryNum == 12:
             entry12()
         
-        # Option to exit the program
-        endProgram = input("Would you like to see another entry? (y/n):\n").strip().lower()
 
+# Option to exit the program
+        
+        while True:
 
-        if endProgram == 'y':
+            endProgram = input("Would you like to see another entry? (y/n):\n").strip().upper()
 
-            print("\nRunning the program again
+            if endProgram == 'Y':
 
-        elif endProgram == 'n'
+                print("\nRunning the program again.")
+                break
 
-            print("Exiting the program.")
+            elif endProgram == 'N':
+
+                print("Exiting the program.")
+                break
+
+            else:
+
+                print("Please enter 'Y' or 'N'.")
+                continue
+        
+        if endProgram == 'N':
+
             break
+
 
 
 
 mainMenu()
 
 actualThing()
-
-
